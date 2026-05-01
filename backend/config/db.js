@@ -1,11 +1,12 @@
 import { Sequelize } from "sequelize";
 
 const sequelize = new Sequelize(
-  "task_manager", // DB name (your phpMyAdmin DB)
-  "root",
-  "", // XAMPP default password = empty
+  process.env.DB_NAME || "task_manager",
+  process.env.DB_USER || "root",
+  process.env.DB_PASSWORD || "",
   {
-    host: "localhost",
+    host: process.env.DB_HOST || "localhost",
+    port: process.env.DB_PORT || 3306,
     dialect: "mysql",
   }
 );
