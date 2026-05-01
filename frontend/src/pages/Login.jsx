@@ -4,8 +4,6 @@ import { MailOutlined, LockOutlined } from "@ant-design/icons";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import API from "../api";
-import axios from "axios";
-
 
 const { Title, Text } = Typography;
 
