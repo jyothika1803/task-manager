@@ -8,7 +8,14 @@ import authRoutes from "./routes/authRoutes.js";
 import taskRoutes from "./routes/taskRoutes.js";
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://task-manager-pi-gold-66.vercel.app/"
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 
