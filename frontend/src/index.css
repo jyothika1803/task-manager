@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f5f7fb;
+}
+
+/* Layout */
+.ant-layout {
+  background: #f5f7fb !important;
+}
+
+/* Cards */
+.ant-card {
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+/* Sidebar */
+.ant-layout-sider {
+  background: linear-gradient(180deg, #0f172a, #1e3a8a) !important;
+}
+
+/* Menu */
+.ant-menu-dark {
+  background: transparent !important;
+}
+
+.ant-menu-item {
+  border-radius: 8px;
+  margin: 6px 10px;
+}
+
+.ant-menu-item-selected {
+  background: #2563eb !important;
+}
